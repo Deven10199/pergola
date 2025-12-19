@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pergola Professionals | Premium Aluminum Pergolas in New Jersey</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="logo.png" alt="Pergola Professionals Logo" width="200" class="logo-img">
+                <div class="logo-text">
+                   
+                </div>
+            </div>
+            
+            <div class="nav-links" id="navLinks">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#about">About</a>
+                <a href="#contact" class="nav-cta">Get Estimate</a>
+            </div>
+            
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <div class="nav-contact">
+                <div class="contact-phone">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="tel:+15551234567">(555) 123-4567</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Premium Aluminum Pergolas</h1>
+            <p class="hero-subtitle">Crafting exceptional outdoor living spaces across New Jersey</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn btn-primary">Get Your Free Estimate</a>
+                <a href="#portfolio" class="btn btn-secondary">View Our Work</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Trust Indicators -->
+    <section class="trust-indicators">
+        <div class="container">
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Licensed & Insured</h3>
+                    <p>Fully licensed and insured for your peace of mind</p>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Serving All NJ</h3>
+                    <p>Providing premium pergolas across New Jersey</p>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-award"></i>
+                    <h3>Satisfaction Guarantee</h3>
+                    <p>100% satisfaction guaranteed on all projects</p>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-calendar-check"></i>
+                    <h3>Free Consultation</h3>
+                    <p>Complimentary design consultation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Premium Aluminum Pergola Solutions</h2>
+                <p>We specialize in high-end aluminum pergolas designed for durability and elegance</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-ruler-combined"></i>
+                    </div>
+                    <h3>Custom Design</h3>
+                    <p>Tailored pergola designs to match your home's architecture and your outdoor living needs.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hammer"></i>
+                    </div>
+                    <h3>Professional Installation</h3>
+                    <p>Expert installation by our skilled craftsmen with attention to every detail.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Premium Materials</h3>
+                    <p>High-quality aluminum that's weather-resistant, durable, and requires minimal maintenance.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <h3>Optional Features</h3>
+                    <p>Motorized louvers, lighting, heating, and shading options to enhance your outdoor experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Gallery -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Recent Projects</h2>
+                <p>Browse our gallery of premium aluminum pergola installations</p>
+            </div>
+            
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="residential">Residential</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+                <button class="filter-btn" data-filter="with-louvers">With Louvers</button>
+            </div>
+            
+            <div class="portfolio-grid" id="portfolioGrid">
+                <!-- Portfolio items will be populated by JavaScript -->
+            </div>
+            
+            <div class="portfolio-modal" id="portfolioModal">
+                <div class="modal-content">
+                    <span class="modal-close" id="modalClose">&times;</span>
+                    <img id="modalImage" src="" alt="Pergola Project">
+                    <div class="modal-info">
+                        <h3 id="modalTitle"></h3>
+                        <p id="modalDescription"></p>
+                        <div class="modal-features">
+                            <span id="modalFeatures"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Outdoor Space?</h2>
+                <p>Contact us today for a free, no-obligation estimate on your premium aluminum pergola.</p>
+                <div class="cta-btns">
+                    <a href="#contact" class="btn btn-primary">Get Your Free Estimate</a>
+                    <a href="tel:+15551234567" class="btn btn-secondary">
+                        <i class="fas fa-phone-alt"></i> Call Now: (555) 123-4567
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get Your Free Estimate</h2>
+                <p>Fill out the form below and we'll contact you within 24 hours</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+15551234567">(555) 123-4567</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:info@pergolaprofessionals.com">info@pergolaprofessionals.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Service Area</h4>
+                                <p>Serving All of New Jersey</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Business Hours</h4>
+                                <p>Mon-Fri: 8am-6pm</p>
+                                <p>Sat: 9am-2pm</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-guarantee">
+                        <i class="fas fa-check-circle"></i>
+                        <p>All estimates include design consultation and 3D rendering at no cost to you.</p>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="address">Property Address</label>
+                            <input type="text" id="address" name="address" placeholder="To ensure we serve your area">
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="projectType">Project Type</label>
+                                <select id="projectType" name="projectType">
+                                    <option value="">Select project type</option>
+                                    <option value="residential">Residential Pergola</option>
+                                    <option value="commercial">Commercial Pergola</option>
+                                    <option value="not-sure">Not Sure Yet</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="timeline">Timeline</label>
+                                <select id="timeline" name="timeline">
+                                    <option value="">Select timeline</option>
+                                    <option value="asap">ASAP</option>
+                                    <option value="1-3months">1-3 Months</option>
+                                    <option value="3-6months">3-6 Months</option>
+                                    <option value="just-looking">Just Gathering Info</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Project Details</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us about your project, desired features, or any specific requirements..."></textarea>
+                        </div>
+                        
+                        <div class="form-submit">
+                            <button type="submit" class="btn btn-primary">
+                                <span id="submitText">Submit Request</span>
+                                <div class="spinner hidden" id="submitSpinner"></div>
+                            </button>
+                            <p class="form-note">By submitting, you agree to be contacted by Pergola Professionals.</p>
+                        </div>
+                        
+                        <div class="form-message" id="formMessage"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <div class="logo-mark">PP</div>
+                        <div class="logo-text">
+                            <span class="logo-primary">PERGOLA</span>
+                            <span class="logo-secondary">PROFESSIONALS</span>
+                        </div>
+                    </div>
+                    <p class="footer-tagline">Crafting exceptional outdoor living spaces across New Jersey since 2010.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <a href="#home">Home</a>
+                        <a href="#services">Services</a>
+                        <a href="#portfolio">Portfolio</a>
+                        <a href="#about">About Us</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Our Services</h4>
+                        <a href="#services">Custom Design</a>
+                        <a href="#services">Installation</a>
+                        <a href="#services">Aluminum Pergolas</a>
+                        <a href="#services">Motorized Louvers</a>
+                        <a href="#services">Lighting & Heating</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Contact Info</h4>
+                        <p><i class="fas fa-phone-alt"></i> (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@pergolaprofessionals.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Serving All of New Jersey</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Pergola Professionals. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-houzz"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="backend.js"></script>
+</body>
+</html>
